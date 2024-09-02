@@ -1,0 +1,38 @@
+{
+  "name": "password-manager",
+  "version": "1.0.0",
+  "description": "Password management",
+  "main": "bin/index.ts",
+  "bin": {
+    "hogopass": "build/bin/index.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start:dev": "npx nodemon",
+    "lint": "eslint . --ext .ts",
+    "start": "ts-node bin/index.ts"
+  },
+  "keywords": [
+    "node-js",
+    "typescript",
+    "ts-node"
+  ],
+  "author": "Rafli Haidar Nashif",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/figlet": "^1.5.8",
+    "@types/node": "^22.5.2",
+    "@typescript-eslint/eslint-plugin": "^8.3.0",
+    "@typescript-eslint/parser": "^8.3.0",
+    "eslint": "^9.9.1",
+    "nodemon": "^3.1.4",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.5.4"
+  },
+  "dependencies": {
+    "chalk": "^4",
+    "commander": "^12.1.0",
+    "figlet": "^1.7.0"
+  }
+}
